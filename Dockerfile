@@ -2,7 +2,7 @@
 FROM openjdk:14-jdk-alpine
 
 # Copy jar files to the image
-ARG JAR_FILE=target/gloreactdashboard2-0.0.1.jar
+ARG JAR_FILE=target/gloreactdashboard-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE} /home/gloreactdashboard/
 ARG CONFIG_FILE=target/classes/application.properties
 COPY ${CONFIG_FILE} /home/gloreactdashboard/config/
