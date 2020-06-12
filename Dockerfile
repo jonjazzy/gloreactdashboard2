@@ -17,4 +17,4 @@ USER spring:spring
 USER root
 RUN chown -R spring /home/gloreactdashboard/
 
-ENTRYPOINT ["java","-jar","/home/gloreactdashboard/gloreactdashboard2-0.0.1.jar","--spring.config.location=config/application.properties"]
+ENTRYPOINT ["java","-jar","/home/gloreactdashboard/gloreactdashboard-0.0.1.jar","--spring.config.location=config/application.properties"]
